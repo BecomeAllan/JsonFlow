@@ -432,6 +432,10 @@ def structure_data(data, nested=False, keys_content=None, adjust_list=False):
                 tree.append(content)
             else:
                 if nested:
+                    # If content is a dictionary
+                    if keys_content and isinstance(content, dict):
+                        content = filter(content, keys_content)
+
                     return content
                 target = tree.setdefault("value", {})
                 

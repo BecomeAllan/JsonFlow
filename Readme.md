@@ -287,18 +287,18 @@ structure_data(res, nested=True,
             keys_content = ["text"])
 
 # result
-{'A': {'B': [{'text': 'hi', 'age': 10},
-   {'text': 'hi', 'age': 10},
-   {'text': 'hi2', 'age': 10}]}}
+{'A': {'B': [{'text': 'hi'},
+   {'text': 'hi'},
+   {'text': 'hi2'}]}}
 
 structure_data(res, nested=True,
               adjust_list=False,
               keys_content = ["text"])
 
 # result
-{'A': {'B[1]': {'text': 'hi', 'age': 10},
-  'B[2]': {'text': 'hi', 'age': 10},
-  'B[3]': {'text': 'hi2', 'age': 10}}}
+{'A': {'B[1]': {'text': 'hi'},
+  'B[2]': {'text': 'hi'},
+  'B[3]': {'text': 'hi2'}}}
 ```
 
 ### 6. Regex
@@ -372,8 +372,11 @@ content_to_merge = [
      "adicional_info": {"label": "label_value3"}},
 ] 
 
+###
+
 merge_content(content_to_merge)
 
+### output
 {'test': [
     ['value1', 'value2'],
     'value3',
@@ -385,9 +388,11 @@ merge_content(content_to_merge)
     {'label': 'label_value3'}
 ]}
 
+###
 
 deep_merge(content_to_merge)
 
+### output
 {'test': [
     ['value1', 'value2'],
     'value3',
