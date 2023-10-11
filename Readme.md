@@ -500,7 +500,7 @@ print(pandoc.write(pandoc_parse_html, format="markdown"))
 
 ## Contributions
 
-Feel free to help build this ecosystem, with application from parses, to pipelines, search engines, ML engines. This library was designed to improve AI models, but can handle many more technology. In near future, we will have a repository to archive the more useful piece of code of day-life.
+Feel free to help build this ecosystem, with applications from parses to pipelines, search engines, and ML engines. This library was designed to improve AI models but can handle much more technology. Soon, we will have a repository to archive the more useful pieces of code of day life.
 
 
 ## Conclusion
@@ -510,9 +510,10 @@ JsonFlow is your go-to solution for anything JSON in Python. With its vast array
 
 ---
 
-**Disclaimer**: While every effort has been made to ensure the accuracy and reliability of the JsonFlow library, the author and contributors cannot guarantee that it is free from defects. Users are advised to ensure that the library meets their requirements before integrating it into their projects. The author disclaims all warranties, either express or implied, including but not limited to any implied warranties of merchantability or fitness for a particular purpose. In no event shall the author be liable for any damages, including but not limited to special, direct, indirect, or consequential damages, losses or expenses arising in connection with this library or its use.
+**Disclaimer**: While every effort has been made to ensure the accuracy and reliability of the JsonFlow library, the author and contributors cannot guarantee that it is free from defects. Users are advised to ensure that the library meets their requirements before integrating it into their projects. The author disclaims all warranties, either express or implied, including but not limited to any implied warranties of merchantability or fitness for a particular purpose. In no event shall the author be liable for any damages, including but not limited to special, direct, indirect, or consequential damages, losses, or expenses arising in connection with this library or its use.
 
 Furthermore, I am a member of the academic community, and I would be immensely flattered if you could cite this work when utilizing JsonFlow in your projects or publications.
 
+[![DOI](https://zenodo.org/badge/703299059.svg)](https://zenodo.org/badge/latestdoi/703299059)
 
 ---
