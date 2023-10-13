@@ -198,35 +198,18 @@ from JsonFlow import deep_merge
 data_test = data.hard_insert(["A/B"], deep_merge)
 
 # Result
-
 [
-  {
-    "A": {
-      "B": [
-        {
-          "C": {
-            "Text": "Test text"
-          },
-          "D": "Value2"
+    {'A': {
+        'B': {
+            'C': {
+                'Text': ['Test text', 'Test text']
+                },
+            'D': ['Value2', 'Value2']},
+        'E': {'Text': 'Test text 2 E'}
         },
-        {
-          "C": {
-            "Text": "Test text"
-          },
-          "D": "Value2"
-        }
-      ],
-      "E": {
-        "Text": "Test text 2 E"
-      }
-    },
-    "F": {
-      "G": {
-        "H": "Value4"
-      },
-      "I": 3
-    }
-  }
+     'F': {
+        'G': {'H': 'Value4'},
+        'I': 3}}
 ]
 ```
 

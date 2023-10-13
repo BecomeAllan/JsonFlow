@@ -1,7 +1,4 @@
-build/
-dist/
+dist
+build
 .vscode
-
-./test.py
-
 *.egg-info

@@ -7,7 +7,7 @@ class JsoniFy:
   def __init__(self, data):
     self.data = data
 
-  def __call__(self, criteria):
+  def __call__(self, criteria, inplace = False):
     """
     Filters the instance's structured data using the specified criteria.
 
@@ -37,9 +37,12 @@ class JsoniFy:
         criteria = [{"name": True}, {"name": lambda x: x.lower()}]
         result = instance(criteria)
     """
-    data = deepcopy(self.data)
-    return query(data, criteria)
-
+    if inplace:
+        data = deepcopy(self.data)
+        return query(data, criteria)
+    else:
+       return query(self.data, criteria)
+       
   def query_path(self, key_path):
     """
     Accesses nested values within the instance's data using a path of keys which can contain regular expressions.
